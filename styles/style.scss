@@ -1,0 +1,98 @@
+$grayish-blue: hsl(217, 19%, 35%);
+$blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+$moderate-violet: hsl(263, 55%, 52%); 
+$light-gray: hsl(0, 0%, 81%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: $light-grayish-blue;
+}
+
+main{
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 2rem 0;
+    section{
+        border-radius: 0.5rem;
+        padding: 1.5rem 2rem;
+        margin: 2rem;
+        box-shadow: rgba(0,0,0, 0.4)  0px 1px 20px;;
+        h2{
+            color: white;
+            margin: 1rem 0rem;
+        }
+    
+        p{
+            color: rgba(255,255,255, 0.7);
+        }
+
+        &:nth-child(1){
+            background: $moderate-violet;
+            background-image: url('../images/bg-pattern-quotation.svg');
+            background-repeat: no-repeat;
+            background-position: 90% 0%;
+        }
+
+        &:nth-child(2){
+            background: $grayish-blue;
+        }
+        &:nth-child(3){
+            background: $white;
+        }
+        &:nth-child(4){
+            background: $blackish-blue;
+        }
+        &:nth-child(5){
+            background: $white;
+        }        
+    }
+}
+
+.card-header{
+    display: flex;
+
+    .author-img{
+        border-radius: 50%;
+        border: 2px solid rgba(255,255,255, 0.4);
+        width:2rem;
+        height: 2rem;
+        overflow: hidden;
+        img{
+            width:2rem;
+            height: 2rem;
+            position: relative;
+            bottom: 2px;
+            right: 2px;
+        }
+    }
+
+    .author-info{
+        margin: 0 1rem;
+
+        h3{
+            color: $white;
+        }
+        p{
+            color: rgba(255,255,255,0.5);
+        }
+    }
+}
+
+.dark{
+    color: $grayish-blue !important;
+}
+
+div > p.darkish{
+    color:  hsla(217, 19%, 35%, 0.5) !important;
+}
+
+section > p.darkish{
+    color:  hsla(217, 19%, 35%, 0.7) !important;
+}

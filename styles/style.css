@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #ecf2f8;
+}
+
+main {
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin: 2rem 0;
+}
+
+main section {
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  margin: 2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 20px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 20px;
+}
+
+main section h2 {
+  color: white;
+  margin: 1rem 0rem;
+}
+
+main section p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+main section:nth-child(1) {
+  background: #7541c8;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+}
+
+main section:nth-child(2) {
+  background: #48556a;
+}
+
+main section:nth-child(3) {
+  background: white;
+}
+
+main section:nth-child(4) {
+  background: #19212e;
+}
+
+main section:nth-child(5) {
+  background: white;
+}
+
+.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-header .author-img {
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+}
+
+.card-header .author-img img {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+}
+
+.card-header .author-info {
+  margin: 0 1rem;
+}
+
+.card-header .author-info h3 {
+  color: white;
+}
+
+.card-header .author-info p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dark {
+  color: #48556a !important;
+}
+
+div > p.darkish {
+  color: rgba(72, 85, 106, 0.5) !important;
+}
+
+section > p.darkish {
+  color: rgba(72, 85, 106, 0.7) !important;
+}
+/*# sourceMappingURL=style.css.map */
